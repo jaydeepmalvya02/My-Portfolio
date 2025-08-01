@@ -3,32 +3,32 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "KaamWala",
+    description: "A platform to hire a buddy for small household task's.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "TailwindCSS", "Node", "Express", "MongoDB"],
+    demoUrl: "https://kaam-wala-frontend.vercel.app/",
+    githubUrl: "https://github.com/jaydeepmalvya02/KaamWala",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "CuraSync",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "Appoint booking and Virtual consultation platform for doctors and patients.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "Node", "Express", "MongoDB", "Razorpay","JitSee"],
+    demoUrl: "https://cura-sync-frontend.vercel.app/",
+    githubUrl: "https://github.com/jaydeepmalvya02/CuraSync",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "SwiftCart",
     description:
       "Full-featured e-commerce platform with user authentication and payment processing.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "Node.js", "Express", "MongoDB", "PayPal API"],
+    demoUrl: "https://e-commerce-platform-nzkh.vercel.app/",
+    githubUrl: "",
   },
 ];
 
@@ -100,7 +100,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/jaydeepmalvya02"
           >
             Check My Github <ArrowRight size={16} />
           </a>

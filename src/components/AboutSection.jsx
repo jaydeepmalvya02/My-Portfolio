@@ -12,13 +12,16 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
+              Passionate Web Developer & Tech Enthusiast
             </h3>
 
             <p className="text-muted-foreground">
-              With over 5 years of experience in web development, I specialize
-              in creating responsive, accessible, and performant web
-              applications using modern technologies.
+              I'm a Computer Science graduate specializing in MERN stack
+              development, passionate about building responsive and
+              user-friendly web applications. With hands-on experience from
+              academic projects and internships, I focus on writing clean,
+              maintainable code and continuously improving my skills with modern
+              technologies.
             </p>
 
             <p className="text-muted-foreground">
