@@ -1,9 +1,21 @@
 import { Briefcase, Code, User } from "lucide-react";
 
 export const AboutSection = () => {
+  const handleCV = () => {
+    // Path to your PDF in public folder
+    const pdfUrl = "/projects/resume.pdf";
+
+    // Create a temporary <a> element to download the file
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "My_Resume.pdf"; // File name for download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="about" className="py-24 px-4 relative">
-      {" "}
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           About <span className="text-primary"> Me</span>
@@ -33,16 +45,15 @@ export const AboutSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
-                {" "}
                 Get In Touch
               </a>
 
-              <a
-                href=""
+              <button
+                onClick={handleCV}
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
-              </a>
+              </button>
             </div>
           </div>
 
@@ -80,7 +91,6 @@ export const AboutSection = () => {
                 <div className="p-3 rounded-full bg-primary/10">
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
-
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Project Management</h4>
                   <p className="text-muted-foreground">
